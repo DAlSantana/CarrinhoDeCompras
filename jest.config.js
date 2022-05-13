@@ -34,12 +34,10 @@ module.exports = {
   // coverageProvider: "v8",
 
   // A list of reporter names that Jest uses when writing coverage reports
-  // coverageReporters: [
-  //   "json",
-  //   "text",
-  //   "lcov",
-  //   "clover"
-  // ],
+  coverageReporters: [
+    "default",
+    "jest-unit"
+  ],
 
   // An object that configures minimum threshold enforcement for coverage results
   // coverageThreshold: undefined,
@@ -83,7 +81,7 @@ module.exports = {
     "jsx",
     "node"
   ],
-
+  
   // A map from regular expressions to module names or to arrays of module names that allow to stub out resources with a single module
   moduleNameMapper: {
     '^.+\\.(css|sass|scss)$': 'identity-obj-proxy',
